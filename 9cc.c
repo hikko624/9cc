@@ -18,7 +18,7 @@ typedef struct
 
 Token tokens[100];
 
-void tokenaize(char *p)
+void tokenize(char *p)
 {
     int i = 0;
 
@@ -67,7 +67,7 @@ int main(int argc, char **argv)
         fprintf(stderr, "引数の個数が正しくありません");
         return 1;
     }
-    tokenaize(argv[1]);
+    tokenize(argv[1]);
 
     printf(".intel_syntax noprefix\n");
     printf(".global _main\n");
